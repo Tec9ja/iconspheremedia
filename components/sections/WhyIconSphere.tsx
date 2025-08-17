@@ -35,8 +35,8 @@ const WhyIconSphere = ({ data }: WhyIconSphereProps) => {
             />
           ))}
         </div>
-        <p className="mt-16 text-center text-xl text-gray-400 italic max-w-4xl mx-auto">
-          "{data.trustStatement}"
+         <p className="mt-16 text-center text-xl text-gray-400 italic max-w-4xl mx-auto">
+          &quot;We treat every project like it&apos;s our make-or-break moment—because it is. Your brand isn&apos;t just another client. To us, it&apos;s a mission.&quot;
         </p>
       </div>
     </section>

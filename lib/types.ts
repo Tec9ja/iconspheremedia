@@ -3,13 +3,26 @@
 import { Image } from 'sanity';
 
 // Type for a single Service
+export type PortableTextBlock = {
+  _key: string;
+  _type: "block";
+  children: {
+    _key: string;
+    _type: "span";
+    marks: any[];
+    text: string;
+  }[];
+  markDefs: any[];
+  style: "normal" | "h1" | "h2" | "h3" | "h4" | "blockquote";
+};
+
+// Type for a single Service
 export interface Service {
   _id: string;
   title: string;
   shortDescription: string;
   ctaText: string;
-  // We'll handle modalContent later, for now it can be 'any'
-  modalContent?: any; 
+  modalContent?: PortableTextBlock[]; // Use the new type here
 }
 
 // Type for a single Creator

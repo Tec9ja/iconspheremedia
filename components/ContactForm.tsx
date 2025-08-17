@@ -3,7 +3,7 @@
 
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import Button from './Button';
+// import Button from './Button';
 
 type FormData = {
   name: string;
@@ -38,15 +38,14 @@ const ContactForm = () => {
     }
   };
 
-  if (isSubmitted) {
+   if (isSubmitted) {
     return (
       <div className="text-center p-8">
         <h3 className="text-2xl font-bold text-white">Thank you!</h3>
-        <p className="text-gray-300 mt-2">Your message has been sent. We'll get back to you shortly.</p>
+        <p className="text-gray-300 mt-2">Your message has been sent. We&apos;ll get back to you shortly.</p>
       </div>
     );
   }
-
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
       <div>
