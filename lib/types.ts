@@ -2,17 +2,16 @@
 
 import { Image } from 'sanity';
 
-// Type for a single Service
 export type PortableTextBlock = {
   _key: string;
   _type: "block";
   children: {
     _key: string;
     _type: "span";
-    marks: any[];
+    marks: string[]; // Changed from any
     text: string;
   }[];
-  markDefs: any[];
+  markDefs: unknown[]; // Changed from any
   style: "normal" | "h1" | "h2" | "h3" | "h4" | "blockquote";
 };
 
