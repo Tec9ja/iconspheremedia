@@ -1,12 +1,13 @@
 // components/sections/CreatorPods.tsx
-"use client"; // No changes here, just keeping it for context
+"use client";
 
 import React from 'react';
-import Image from 'next/image'; // Import the Next.js Image component
-import Button from '../Button';
+import Image from 'next/image';
+// import Button from '../Button'; // Remove this line
 import { PageData } from '@/lib/types';
 import { urlFor } from '@/lib/sanity';
-//... other imports
+
+// ... rest of the file
 
 const CreatorCard = ({ name, category, imageUrl, imageAlt }: { name: string, category: string, imageUrl: string, imageAlt: string }) => (
   <div className="group relative overflow-hidden rounded-lg">

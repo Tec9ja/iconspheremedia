@@ -5,8 +5,9 @@ import { Service } from "@/lib/types";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import React, { useRef } from "react";
-import { PortableText } from '@portabletext/react'
+// import { PortableText } from '@portabletext/react' // Comment this out for now
 
+// ... rest of the file
 
 interface ServiceModalProps {
   service: Service | null;

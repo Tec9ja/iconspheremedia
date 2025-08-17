@@ -33,7 +33,7 @@ const ContactForm = () => {
       }
       
       setIsSubmitted(true);
-    } catch (err) {
+    } catch {
       setError('Failed to send message. Please try again later.');
     }
   };
